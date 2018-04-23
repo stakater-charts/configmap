@@ -1,0 +1,11 @@
+configmap:
+  namespace: default
+  labels:
+    group: com.stakater.platform
+    provider: stakater
+    version: 1.0
+  name: keycloak-proxy
+  annotations:
+    hello: world
+  data:
+    some: data
