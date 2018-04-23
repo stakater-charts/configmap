@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+{{ include "labels.stakater" . | indent 4 }}
+{{ include "labels.chart" . | indent 4 }}
+{{- with .Values.configmap.annotations }}
+  annotations:
+    {{- range $key, $value := . }}
+    {{ $key }}: {{ $value }}
+    {{- end }}
+{{- end }}
+  name: {{ .Values.configmap.name }}
+data:
+{{- range $key, $value := .Values.configmap.data }}
+  {{ $key }}: {{ $value }}
+{{- end }}
