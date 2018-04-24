@@ -3,7 +3,7 @@ configmap:
   labels:
     group: com.stakater.platform
     provider: stakater
-    version: 1.0
+    version: "1.0"
   name: keycloak-proxy
   annotations:
     hello: world
