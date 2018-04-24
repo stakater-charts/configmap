@@ -23,7 +23,7 @@ provider: {{ .Values.configmap.labels.provider }}
 
 {{- define "labels.stakater" -}}
 {{ template "labels.selector" . }}
-version: {{ .Values.configmap.labels.version }}
+version: {{ .Values.configmap.labels.version | quote }}
 {{- end -}}
 
 {{- define "labels.chart" -}}
