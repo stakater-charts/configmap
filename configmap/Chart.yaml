@@ -5,7 +5,7 @@ version: 1.0.0
 keywords:
   - configmap
   - kubernetes
-home: https://github.com/stakater/chart-configmap
+home: https://github.com/stakater-charts/configmap
 maintainers:
 - name: Stakater
   email: stakater@aurorasolutions.io
