@@ -1,0 +1,1 @@
+Configmap have been created. Mount these in your resources to use them.

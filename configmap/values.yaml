@@ -1,9 +1,6 @@
-labels:
-  group: com.stakater.platform
-  provider: stakater
-  version: "1.0"
-  app: app
-
-ConfigMapName: configmap-name
-Annotations: {}
-Data: {}
+ConfigMap:
+- name: configmapname
+  labels:
+    app: "appname"
+  annotations: {}
+  data:
